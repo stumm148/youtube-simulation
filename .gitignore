@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+.Python
+*.sqlite3
+
+# Django specific
+db.sqlite3
+*.log
+*.pot
+*.pyc
+.env
+.env.*
+
+# VSCode / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# System
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+*.seed
+*.pidfile
+*.pid.lock
+*.bak
+*.swp
+
+# Migrations
+*/migrations/__pycache__/
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/*.pyd
+*/migrations/*.sqlite3
+*/migrations/*.log
+
+
+# Build
+build/
+dist/
+*.tgz
+*.tar.gz
+*.zip
+
+# Project-specific exclusions
+api_try.py
