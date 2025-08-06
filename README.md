@@ -119,3 +119,28 @@ youtube_simulation/
 └── manage.py
 ```
 
+##  What I'd Improve With More Time
+
+1. **Expand Internal API Data Model**  
+   The current schema is minimal. I would add:
+   - Video: `views`, `likes`, `duration`, `is_favorite`, `resolution`
+   - Channel: `subscribers_count`, `verified`, `country`
+   - Comment: `likes`, `is_pinned`, `is_edited`
+
+2. **Add API Pagination**  
+   Currently, endpoints return full datasets. Proper pagination (e.g., `PageNumberPagination`) is needed.
+
+3. **Improve AI-like Comment Generation**  
+   Make comments more dynamic, relevant, and context-aware based on video type or stats.
+
+4. **Advanced Metrics**  
+   Add stats like top channels, most liked videos, daily comment growth, etc.
+
+5. **Connect Real YouTube API**  
+   Extend the `adapter` and `provider` modules to connect to the real YouTube API using credentials and OAuth.
+
+6. **Better Admin Experience**  
+   Filters, inline editing, comment counts in list views, etc.
+
+7. **Testing & CI/CD**  
+   Test coverage reports, and GitHub Actions for CI.
