@@ -90,6 +90,6 @@ CELERY_BROKER_URL = 'redis://redis:6379/0'
 CELERY_BEAT_SCHEDULE = {
     'generate-every-5-seconds': {
         'task': 'videos.tasks.generate_mock_content',
-        'schedule': 10.0,
+        'schedule': 3600.0,
     },
 }
